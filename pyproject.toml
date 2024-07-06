@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "pdi"
+version = "0.1.0"
+description = ""
+authors = ["Milosz Pawel Kasak <m.kasak@stud.elka.pw.edu.pl>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+matplotlib = "^3.6.2"
+pandas = "^1.5.2"
+tqdm = "^4.64.1"
+scikit-learn = "^1.2.0"
+wandb = "^0.13.6"
+ipykernel = "^6.19.2"
+ipywidgets = "^8.0.3"
+jinja2 = "^3.1.2"
+onnx = "^1.13.0"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+yapf = "^0.32.0"
+toml = "^0.10.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
